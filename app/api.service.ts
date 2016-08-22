@@ -3,8 +3,15 @@ import { Http, Response } from '@angular/http';
 
 import { ApiRequest } from './api-request';
 
+
+/**
+ * We declare the ApiService as Injectable in order to have the
+ * dependency injector provide it to all classes that might need it.
+ * set and get methods are used in order to access data. The set/get functions begin with a $ 
+*/
 @Injectable()
 export class ApiService {
+    //define static constants for easier usage
     private static api_key: string = "test_key";
     private static register_user_function: string = "register_user";
     private static authenticate_user_function: string = "authenticate_user";
@@ -16,6 +23,7 @@ export class ApiService {
     }
 
     public registerUser(name: string, password_hash: string, email: string, github: string) {
+        this.refreshParameters();
         this.$api_key = ApiService.api_key;
         this.$functionName = ApiService.register_user_function;
         this.$name = name;
@@ -28,9 +36,31 @@ export class ApiService {
     }
 
     public authenticateUser(name: string, password_hash: string) {
+        this.refreshParameters();
         this.$functionName = ApiService.authenticate_user_function;
         this.$name = name;
         this.$password_hash = password_hash;
+    }
+
+    public resetUserPassword(name: string) {
+        this.refreshParameters();
+        this.$name = name;
+    }
+
+    public inviteTeamMemberByUsername(team_name: string, user_name: string) {
+        this.refreshParameters();
+    }
+
+    private refreshParameters() {
+        this.$apiRequest.$payload.$parameters = new Object();
+    }
+
+    /**
+     * @Nullable github
+     */
+    public registerTeam(name: string, github?: string) {
+        this.$name = name;
+        this.$github = github;
     }
 
     private set $functionName(value: string) {
@@ -56,7 +86,6 @@ export class ApiService {
     private set $api_key(value: string) {
         this.$apiRequest.$api_key = value;
     }
-
 
     public get $apiRequest(): ApiRequest {
         return this.apiRequest;
