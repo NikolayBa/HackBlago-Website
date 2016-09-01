@@ -23,7 +23,6 @@ export class ApiService {
         this.$email = email;
         this.$github = github;
 
-
         // this.http.post("127.0.0.1", JSON.stringify(this.apiRequest));
         console.log(JSON.stringify(this.apiRequest));
     }

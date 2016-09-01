@@ -3,7 +3,7 @@ import { HttpModule } from '@angular/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent }  from './app.component';
+import { AppComponent }  from './components/app.component';
 import { ApiService } from './api.service';
 
 @NgModule({
