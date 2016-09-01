@@ -15,10 +15,9 @@ include('js/device.min.js');
 /* Stick up menu
  ========================================================*/
 include('js/tmstickup.js');
-$(window).load(function () {
+$(window).load(function() {
     if ($('html').hasClass('desktop')) {
-        $('#stuck_container').TMStickUp({
-        })
+        $('#stuck_container').TMStickUp({})
     }
 });
 
@@ -30,7 +29,7 @@ include('js/jquery.easing.1.3.js');
 /* ToTop
  ========================================================*/
 include('js/jquery.ui.totop.js');
-$(function () {
+$(function() {
     $().UItoTop({ easingType: 'easeOutQuart' });
 });
 
@@ -38,20 +37,20 @@ $(function () {
 /* DEVICE.JS AND SMOOTH SCROLLIG
  ========================================================*/
 include('js/jquery.mousewheel.min.js');
-include('js/jquery.simplr.smoothscroll.min.js');
-$(function () {
-    if ($('html').hasClass('desktop')) {
-        $.srSmoothscroll({
-            step: 150,
-            speed: 800
-        });
-    }
-});
+// include('js/jquery.simplr.smoothscroll.min.js');
+// $(function () {
+//     if ($('html').hasClass('desktop')) {
+//         $.srSmoothscroll({
+//             step: 150,
+//             speed: 800
+//         });
+//     }
+// });
 
 /* Copyright Year
  ========================================================*/
 var currentYear = (new Date).getFullYear();
-$(document).ready(function () {
+$(document).ready(function() {
     $("#copyright-year").text((new Date).getFullYear());
 });
 
@@ -64,22 +63,22 @@ include('js/jquery.mobilemenu.js');
 /* Unveil
  ========================================================*/
 include('js/jquery.unveil.js');
-$(document).ready(function () {
+$(document).ready(function() {
     $('img').unveil();
 });
 
 /* Orientation tablet fix
  ========================================================*/
-$(function () {
-// IPad/IPhone
+$(function() {
+    // IPad/IPhone
     var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
         ua = navigator.userAgent,
 
-        gestureStart = function () {
+        gestureStart = function() {
             viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
         },
 
-        scaleFix = function () {
+        scaleFix = function() {
             if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
                 viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
                 document.addEventListener("gesturestart", gestureStart, false);
@@ -92,13 +91,13 @@ $(function () {
         var regM = /ipod|ipad|iphone/gi,
             result = ua.match(regM)
         if (!result) {
-            $('.sf-menu li').each(function () {
+            $('.sf-menu li').each(function() {
                 if ($(">ul", this)[0]) {
                     $(">a", this).toggle(
-                        function () {
+                        function() {
                             return false;
                         },
-                        function () {
+                        function() {
                             window.location.href = $(this).attr("href");
                         }
                     );
@@ -118,77 +117,71 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 
 /* Custom script
  ========================================================*/
-$(document).ready(function () {
+$(document).ready(function() {
     var camera = $('#camera');
     var owl = $('#owl');
     var owl2 = $('#owl_2');
     var isotope = $('.isotope');
 
-    if(camera.length > 0){
-        camera.camera(
-            {
-                autoAdvance: false,
-                height: '31.25%',
-                minHeight: '200px',
-                pagination: false,
-                thumbnails: false,
-                playPause: false,
-                hover: false,
-                loader: 'none',
-                navigation: true,
-                navigationHover: false,
-                mobileNavHover: false,
-                fx: 'simpleFade'
-            }
-        );
+    if (camera.length > 0) {
+        camera.camera({
+            autoAdvance: false,
+            height: '31.25%',
+            minHeight: '200px',
+            pagination: false,
+            thumbnails: false,
+            playPause: false,
+            hover: false,
+            loader: 'none',
+            navigation: true,
+            navigationHover: false,
+            mobileNavHover: false,
+            fx: 'simpleFade'
+        });
     }
 
-    if(owl.length > 0){
-        owl.owlCarousel(
-            {
-                navigation: true,
-                autoPlay: true,
-                slideSpeed: 300,
-                stopOnHover: true,
-                pagination: false,
-                paginationSpeed: 400,
-                singleItem: true,
-                mouseDrag: false,
-                navigationText: ["", ""]
-            }
-        );
+    if (owl.length > 0) {
+        owl.owlCarousel({
+            navigation: true,
+            autoPlay: true,
+            slideSpeed: 300,
+            stopOnHover: true,
+            pagination: false,
+            paginationSpeed: 400,
+            singleItem: true,
+            mouseDrag: false,
+            navigationText: ["", ""]
+        });
     }
 
-    if(owl2.length > 0){
-        owl2.owlCarousel(
-            {
-                navigation: true,
-                autoPlay: true,
-                slideSpeed: 300,
-                stopOnHover: true,
-                pagination: false,
-                paginationSpeed: 400,
-                singleItem: true,
-                mouseDrag: false,
-                navigationText: ["", ""]
-            }
-        );
+    if (owl2.length > 0) {
+        owl2.owlCarousel({
+            navigation: true,
+            autoPlay: true,
+            slideSpeed: 300,
+            stopOnHover: true,
+            pagination: false,
+            paginationSpeed: 400,
+            singleItem: true,
+            mouseDrag: false,
+            navigationText: ["", ""]
+        });
     }
 
-    if(isotope.length > 0){
+    if (isotope.length > 0) {
         isotope.isotope({
             itemSelector: '.element-item',
             layoutMode: 'fitRows'
         });
 
-        $('#filters').on( 'click', 'a', function() {
-            var filterValue = $( this ).attr('data-filter');
+        $('#filters').on('click', 'a', function() {
+            var filterValue = $(this).attr('data-filter');
             console.log(filterValue);
 
-            if(filterValue == '*'){
+            if (filterValue == '*') {
                 isotope.isotope({ filter: filterValue });
-            }else{
-                isotope.isotope({ filter: '.'+filterValue });
+            } else {
+                isotope.isotope({ filter: '.' + filterValue });
             }
             return false;
         });
