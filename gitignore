@@ -52,3 +52,7 @@ typings
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+
+### Images ###
+images/
+assets/img/

@@ -1,9 +1,19 @@
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Angular 2 QuickStart</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Фирма “Плезир”-55 ЕООД е създадена с основна цел да предложи на хотели, СПА центрове, ресторанти, почивни бази, детски градини и др. експресно изпиране на бельо с високо качество и конкурентни цени.">
+    <meta name="author" content="AUBG Spaces">
+    <title>Плезир 55</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="assets/css/flexslider.min.css" rel="stylesheet" />
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="shortcut icon" type="image/svg" href="assets/img/svg_icons/title_machine.svg" />
     <link rel="stylesheet" href="styles.css">
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
@@ -19,10 +29,304 @@
         });
     </script>
 </head>
-<!-- 3. Display the application -->
 
 <body>
-    <my-app>Loading...</my-app>
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header move-me">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#home"><img src="images/HackBlago_Logo.jpg" class="logo-custom" alt="" /></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">НАЧАЛО</a></li>
+                    <li><a href="#about-sec">ЗА НАС</a></li>
+                    <li><a href="#features-sec">УСЛУГИ</a></li>
+                    <li><a href="#prices-sec">ЦЕНИ</a></li>
+                    <li><a href="#location-sec">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-sec" id="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center ">
+                    <div class="col-lg-12  col-md-12 col-sm-12">
+                        <div class="flexslider set-flexi" id="main-section">
+                            <ul class="slides move-me">
+                                <li>
+                                    <h1>Пране на Хотелско Бельо</h1>
+                                    <a href="#about-sec" class="btn btn-primary btn-lg">Кои сме ние?</a>
+                                    <a href="#features-sec" class="btn btn-success btn-lg">Нашите услуги</a>
+                                </li>
+                                <li>
+                                    <h1>Пране на губери, одеяла, куверти и др.</h1>
+                                    <a href="#about-sec" class="btn btn-primary btn-lg">Кои сме ние?</a>
+                                    <a href="#features-sec" class="btn btn-danger btn-lg">Нашите услуги</a>
+                                </li>
+                                <li>
+                                    <h1>Пране на килими, пътеки и др.</h1>
+                                    <a href="#about-sec" class="btn btn-success btn-lg">Кои сме ние?</a>
+                                    <a href="#features-sec" class="btn btn-info btn-lg">Нашите услуги</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tag-line">
+        <div class="container">
+            <div class="row  text-center">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <h2 data-scroll-reveal="enter from the bottom after 0.1s"><i class="fa fa-phone"></i>0889 51 85 33 / 0889 02 37 37</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the top after 0.5s" class="header-line">За нас</h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s" class="paragraph">Фирма “Плезир”-55 ЕООД започва своята дейност като първа частна пералня през 1992 г. в гр. Стара Загора. През 2001 г. се извършва построяването на нов комбинат за пране в с. Ягода, намиращ се между градовете Стара Загора и Казанлък.</p>
+                <p data-scroll-reveal="enter from the bottom after 0.3s" class="paragraph">Комбинатът е разположен на площ от 1466 м2 с отделни и съвременни автоматизирани перални линии, които дават възможност в рамките на 24 часа да бъде обслужен всеки един хотел или индивидуален клиент, независимо от подаденото количество
+                    бельо.
+                </p>
+                <p data-scroll-reveal="enter from the bottom after 0.3s" class="paragraph">През всички тези години непрестанно сме усъвършенствали технологията на пране на различните материи, и сме успели да подберем най-добрите перилни и дезинфекционни препарати. В резултат на това, успяхме да постигнем най-високо ниво на качеството
+                    на услугата и в същото време да сведем амортизацията на бельото до минимум.</p>
+            </div>
+        </div>
+    </div>
+    <div id="features-sec">
+        <div class="container set-pad">
+            <h1 data-scroll-reveal="enter from the top after 0.3s" class="header-line header-services"><img src="assets/img/svg_icons/clean5.svg" alt="basket" class="logo-custom"/>Нашите услуги<img src="assets/img/svg_icons/wash6.svg" alt="wash" class="logo-custom"/></h1>
+            <div class="row">
+                <div class="col-lg-7  col-md-7 col-sm-7" data-scroll-reveal="enter from the left after 0.4s">
+                    <div class="features-div move-me">
+                        <img src="assets/img/svg_icons/sleeping.svg" alt="hotel" class="logo-custom icon-round-border" />
+                        <h3>Пране на Хотелско Бельо</h3>
+                        <hr/>
+                        <p class="paragraph">Фирмата ни е създадена с основна цел да предложи на хотели, СПА центрове, ресторанти, почивни бази, детски градини и др. експресно изпиране на бельо с високо качество и конкурентни цени.</p>
+                        <p class="paragraph">Изградената база с отделни автоматизирани линии за пране, сушене и гладене, заедно с дългогодишният ни опит на ръководния и обслужващ персонал ни дават възможност да изпълняваме поръчките на нашите клиенти в срок от 24 ч., независимо
+                            от количеството бельо. При извънредни обстоятелства изпираме поръчки в срок от 8 часа. </p>
+                        <p class="paragraph">Транспорта е изцяло за сметката на нашата фирма и се извършва 7 дни в седмицата без ограничения за работни дни, празници и почивки. В същият срок изпълняваме поръчките за пране и химическо почистване на гости отседнали в хотели
+                            които обслужваме.Прането за всеки клиент се извършва индивидуално, под стриктен контрол за качеството. Пакетира се в полиетиленови опаковки по начин и бройка оказана от клиента.Коректното обслужване и безрезервното отговаряне
+                            на всички изисквания на на нашите клиенти винаги са били приоритет за нас.</p>
+                        <a href="#contact-sec" class="btn btn-info btn-set">Свържете се с нас</a>
+                    </div>
+                </div>
+                <img src="assets/img/towels-features.jpg" alt="hoteltowels" class="col-lg-5 col-md-3 col-sm-2 hotel-towel" data-scroll-reveal="enter from the bottom after 0.6s" />
+                <img src="assets/img/hotel-tows.jpg" alt="blanket" class="col-lg-5 col-md-3 col-sm-2 hotel-towel" data-scroll-reveal="enter from the bottom after 0.6s" />
+            </div>
+            <div class="row">
+                <img src="assets/img/blankets.jpg" alt="blanket" class="col-lg-5 col-md-3 col-sm-2 hotel-towel" data-scroll-reveal="enter from the right after 0.5s" />
+                <div class="col-lg-7  col-md-7 col-sm-7" data-scroll-reveal="enter from the bottom after 0.5s">
+                    <div class="features-div move-me">
+                        <img src="assets/img/svg_icons/warm4.svg" alt="blanket" class="logo-custom icon-round-border" />
+                        <h3>Пране на губери, одеяла, китеници, куверти, халища, олекотени завивки и др. </h3>
+                        <hr/>
+                        <p class="paragraph">
+                            Изпирането се извършва в промишлени перални с различен капацитет <br/>(10-20-30-50 кг). Изпирането е индивидуално за всеки клиент. Извършват се следните процедури: <br/><br/>
+                            <i class="fa fa-check-square-o"></i>Почистване със специализирана за целта прахосмукачка <br/>
+                            <i class="fa fa-check-square-o"></i>При наличие на петна или силни замърсявания на места, се прилага третиране с подходящи препарати <br/>
+                            <i class="fa fa-check-square-o"></i>Извършва се пред-пране за да се извлече по-голямата част от натрупаният прах <br/>
+                            <i class="fa fa-check-square-o"></i>Същинско пране – с подбрани според материята препарати <br/>
+                            <i class="fa fa-check-square-o"></i>Омекотяване <br/>
+                            <i class="fa fa-check-square-o"></i>Изсушаване в промишлени сушилни или помещения според материята <br/>
+                            <i class="fa fa-check-square-o"></i>Опаковане в полиетиленови опаковки <br/>
+                        </p>
+                        <a href="#contact-sec" class="btn btn-info btn-set">Свържете се с нас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="features-div move-me">
+                    <img src="assets/img/svg_icons/furniture133.svg" alt="furniture" class="logo-custom icon-round-border" />
+                    <h3>Пране на килими, пътеки и др. </h3>
+                    <hr/>
+                    <p class="paragraph">
+                        Прането се извършва с професионални машини. <br/> <br/>
+                        <i class="fa fa-check-square-o"></i>Почистване с прахосмукачка <br/>
+                        <i class="fa fa-check-square-o"></i>Обливане с почистващ препарат <br/>
+                        <i class="fa fa-check-square-o"></i>Обработване с въртящи се четки, обиращи евентуално полепнали влакна <br/>
+                        <i class="fa fa-check-square-o"></i>Същинско пране от двете страни на артикула с подбрани препарати запазващи 100% цветовете на килима
+                        <br/>
+                        <i class="fa fa-check-square-o"></i>Изсушаване в термо-помещения <br/>
+                        <i class="fa fa-check-square-o"></i>Опаковане <br/>
+                    </p>
+                    <a href="#contact-sec" class="btn btn-info btn-set">Свържете се с нас</a>
+                </div>
+            </div>
+            <img src="assets/img/rug.jpg" alt="rug" class="col-lg-5 col-md-3 col-sm-2 hotel-towel" data-scroll-reveal="enter from the left after 0.5s" />
+            <img src="assets/img/rug2.jpg" alt="rug2" class="col-lg-5 col-md-3 col-sm-2 hotel-towel" data-scroll-reveal="enter from the right after 0.5s" />
+            <div class="col-lg-12 col-md-12 col-sm-12" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="features-div move-me">
+                    <div class="third-section">
+                        <img src="assets/img/svg_icons/delivery23.svg" alt="delivery" class="logo-custom icon-round-border" />
+                        <h3>Транспорт</h3>
+                        <hr/>
+                    </div>
+                    <p class="paragraph">
+                        За клиенти, предпочитащи прането да бъде взето от домовете или офисите им, осигуряваме наш транспорт в удобен за клиента ден и час.<br/><span class="paragraph discount">За количество над 50 кг. транспорта е безплатен.</span> <br/>                        Срок за изпълнение на поръчките е 5 календарни дни. Приемането и предаването се извършва без почивен ден от 7:00 до 22:00 часа (независимо дали е от домовете или в комбината в с. Ягода).Офертата за транспорт е валидна за следните
+                        населени места: <br/>
+                        <i class="fa fa-angle-right"></i> Стара Загора <br/>
+                        <i class="fa fa-angle-right"></i> Казанлък <br/>
+                        <i class="fa fa-angle-right"></i> Мъглиж
+                    </p>
+                    <a href="#contact-sec" class="btn btn-info btn-set">Свържете се с нас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="prices-sec">
+        <div class="container set-pad">
+            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                    <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Цени</h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s" class="paragraph price-paragraph">При предаването на вашите губери, черги, килими и др., в приемният пункт в самият комбинат в с. Ягода, ще ползвате преференциална <span class="low-price">ниска цена</span>!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center" data-scroll-reveal="enter from the bottom after 0.3s">
+                    <div class="panel-bg">
+                        <div class="panel panel-pricing price-panels-color">
+                            <div class="panel-heading">
+                                <img src="assets/img/svg_icons/delivery2.svg" class="price-img" alt="delivery" />
+                                <img src="assets/img/svg_icons/clean4.svg" class="price-img" alt="basket" />
+                                <img src="assets/img/svg_icons/washingmachine2.svg" class="price-img" alt="washingmachine" />
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong>0.80лв / кг</strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Губери, Халища</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Черги,Килими</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Пътеки, Одеала</li>
+                            </ul>
+                            <div class="panel-footer move-me">
+                                <a class="btn btn-lg btn-block btn-info" href="#contact-sec">Научете повече</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-12 price-transport" data-scroll-reveal="enter from the bottom after 0.6s">
+                    <div class="prices-div">
+                        <img src="assets/img/svg_icons/delivery23.svg" alt="delivery" class="logo-custom icon-round-border truck-icon" />
+                        <hr/>
+                        <h4 class="paragraph low-price">За количество над 50 кг. транспорта е безплатен.</h4>
+                        <hr/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center" data-scroll-reveal="enter from the bottom after 0.3s">
+                    <div class="panel-bg">
+                        <div class="panel panel-pricing price-panels-color">
+                            <div class="panel-heading">
+                                <img src="assets/img/svg_icons/delivery2.svg" class="price-img" alt="delivery" />
+                                <img src="assets/img/svg_icons/clean4.svg" class="price-img" alt="basket" />
+                                <img src="assets/img/svg_icons/washingmachine2.svg" class="price-img" alt="washingmachine" />
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong>1.00лв / кг</strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Олекотени завивки</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Пердета, Завеси</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Куверти, Дормео завивки</li>
+                            </ul>
+                            <div class="panel-footer move-me">
+                                <a class="btn btn-lg btn-block btn-info" href="#contact-sec">Научете повече</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="location-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Контакти </h1>
+            </div>
+        </div>
+        <div id="map" class="col-lg-12 col-md-12 col-sm-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.4564884697133!2d25.57222531546217!3d42.545598979174805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDMyJzQ0LjIiTiAyNcKwMzQnMjcuOSJF!5e0!3m2!1sbg!2sbg!4v1453400572419"
+                width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row set-row-pad">
+            <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+                <h2><strong>Нашият адрес </strong></h2>
+                <div class="move-me">
+                    <h4>Село Ягода,</h4>
+                    <h4>ул. “8-ми Март” № 44,източно от плажа</h4>
+                    <h4><strong><i class="fa fa-phone"></i></strong> 0889 51 85 33 / 0889 02 37 37</h4>
+                    <h4><strong><i class="fa fa-envelope"></i></strong> contact@prane.eu</h4>
+                    <a href="#contact-sec" class="btn btn-info btn-set contact-button">Имате въпроси? Пишете ни <i class="fa fa-arrow-down"></i></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+                <h2><strong>Социални мрежи</strong></h2>
+                <hr/>
+                <div>
+                    <a href="#"> <img src="assets/img/Social/facebook.png" alt="" /> </a>
+                    <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
+                    <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-sec">
+        <div class="overlay">
+            <div class="container set-pad">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Свържете се с нас</h1>
+                        <p class="paragraph contact-par" data-scroll-reveal="enter from the bottom after 0.3s">Ако искате да се свържете с нас, попълнете формата и ние ще се опитаме да ви отговорим в рамките на 24 часа!</p>
+                    </div>
+                </div>
+                <div class="row set-row-pad" data-scroll-reveal="enter from the bottom after 0.5s">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                        <form name="contactform" method="post" action="assets/mail/send_mail.php">
+                            <div class="form-group">
+                                <input name="person-name" type="text" maxlength="80" class="form-control " required="required" placeholder="Име*" />
+                            </div>
+                            <div class="form-group">
+                                <input name="email" type="text" maxlength="50" class="form-control " required="required" placeholder="Email Адрес*" />
+                            </div>
+                            <div class="form-group">
+                                <input name="phonenumber" maxlength="15" type="tel" class="form-control " required="required" placeholder="Телефонен за контакти*" />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" required="required" class="form-control" style="min-height: 150px;" maxlength="500" placeholder="Съобщение*"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-info btn-block btn-lg">ИЗПРАЩАНЕ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="move-me">
+            <a href="#home" id="return-to-top" class="move-me"><i class="fa fa-chevron-up fa-2x"></i></a>
+        </div>
+        <div id="footer">
+            &copy 2016 prane.eu | All Rights Reserved | <a href="https://www.facebook.com/AUBGSpaces/?fref=ts" style="color: #fff" target="_blank">Design by : AUBG Spaces</a>
+        </div>
+        <script src="assets/js/jquery-1.10.2.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/jquery.flexslider.js"></script>
+        <script src="assets/js/scrollReveal.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/prane.js"></script>
+    </div>
 </body>
 
 </html>

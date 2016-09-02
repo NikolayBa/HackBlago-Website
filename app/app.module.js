@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
+var app_component_1 = require('./components/app.component');
 var api_service_1 = require('./api.service');
 var AppModule = (function () {
     function AppModule() {
