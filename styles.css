@@ -161,6 +161,16 @@ nav a.router-link-active {
     border-radius: 4px 0 0 4px;
 }
 
+.partners_block {
+    display: inline-flex;
+}
+.first_partner{
+    margin-right: 25px;
+}
+
+.second_partner{
+    margin-left: 25px;
+}
 
 /* everywhere else */
 
