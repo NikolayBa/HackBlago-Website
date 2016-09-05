@@ -455,7 +455,7 @@ h1::after {
 #footer {
     padding: 5px 20px;
     background-color: #2d3d5a;
-    text-align: right;
+    text-align: center;
     color: #fff;
     font-size: 15px;
 }
