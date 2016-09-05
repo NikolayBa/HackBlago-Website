@@ -1,5 +1,5 @@
 ﻿#about-sec {
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .features-div h3,
@@ -143,7 +143,7 @@ h1::after {
     font-size: 20px;
     font-weight: 900;
     padding: 5px 10px 10px 5px;
-    color: #005E5A
+    color: #1C2B4B 
 }
 
 .tag-line h2>i {
