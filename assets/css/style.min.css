@@ -156,7 +156,7 @@ h1::after {
     font-size: 26px;
     padding-bottom: 5px;
     padding-top: 25px;
-    color: #333
+    color: #1C2B4B
 }
 
 .header-services {
@@ -166,7 +166,7 @@ h1::after {
 
 h1::after {
     content: " ";
-    border: 2px solid #2f9484;
+    border: 2px solid yellow;
     width: 200px;
     margin: 12px auto
 }
@@ -177,7 +177,7 @@ h1::after {
     font-style: italic;
     font-size: 20px;
     margin-bottom: 15px;
-    color: grey;
+    color: #1C2B4B;
     font-weight: 500
 }
 
@@ -259,96 +259,9 @@ h1::after {
     margin-bottom: 50px
 }
 
-.low-price {
-    color: #1A94C4;
-    font-weight: 700;
-    font-size: 19px
-}
-
-.panel-pricing {
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease
-}
-
-.panel-pricing:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, .2)
-}
-
-.panel-pricing .panel-heading {
-    padding: 10px 5px
-}
-
-.panel-pricing .list-group-item {
-    color: #777;
-    border-bottom: 1px solid rgba(250, 250, 250, .5)
-}
-
-.panel-pricing .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0
-}
-
-.panel-pricing .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0
-}
-
-.panel-pricing .panel-body {
-    background-color: #f0f0f0;
-    font-size: 40px;
-    color: #777;
-    padding: 20px;
-    margin: 0
-}
-
 .panel-bg {
     background: #fff;
     border-radius: 10px
-}
-
-.price-panels-color {
-    border-radius: 10px;
-    background: #1C2B4B
-}
-
-.price-img {
-    padding: 0;
-    margin: 0 5px;
-    width: 75px
-}
-
-#prices-sec {
-    background-color: #fff;
-    color: #000;
-    margin-top: 50px
-}
-
-#prices-sec .header-line {
-    color: #000
-}
-
-.price-div h4 {
-    line-height: 30px;
-    font-weight: 700
-}
-
-.prices-div {
-    padding: 30px
-}
-
-.prices-div hr {
-    border: 1px solid #1A94C4
-}
-
-.prices-div h3 {
-    font-size: 25px;
-    font-weight: 700
-}
-
-.prices-div p {
-    padding-top: 0;
-    padding-bottom: 15px
 }
 
 .contact-button {
@@ -391,7 +304,7 @@ h1::after {
 
 #footer {
     padding: 5px 20px;
-    background-color: #2d3d5a;
+    background-color: #1C2B4B;
     text-align: center;
     color: #fff;
     font-size: 15px
