@@ -184,3 +184,7 @@ nav a.router-link-active {
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#special_hyperlink a{
+    text-decoration: none;
+}
