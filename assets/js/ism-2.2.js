@@ -333,7 +333,7 @@
       buttons: true, // true | false
       radios: true, // true | false
       radio_type: "button", // "button" | "thumbnail"
-      pause_button: true, // true | false
+      pause_button: false, // true | false
       transition_duration: 350, // applies to fade and zoom transition types only
       swipe: true // true | false
     };
@@ -612,7 +612,7 @@
       opts.play_type = play_type;
 
       // Render markup for pause button and bind click event
-      init_pause_button();
+     // init_pause_button();
 
       continue_autoplay()
 
@@ -646,12 +646,12 @@
         if(opts.play_type == "once" && slide_index == get_slide_count() - 2) // penultimate slide
         {
           transition(next_slide_index);
-          pause_autoplay();
+           continue_autoplay()
         }
         else if(opts.play_type == "once-rewind" && slide_index == get_slide_count() - 1) // last slide
         {
           transition(0);
-          pause_autoplay();
+          continue_autoplay();
         }
         else if(opts.play_type == "loop" && slide_index == get_slide_count() - 1) // last slide
         {
@@ -669,11 +669,8 @@
 
     function pause_autoplay() {
 
-      autoplay_run = false;
-      clearTimeout(autoplay_timeout);
-      autoplay_timeout = null;
-
-      iq("#" + element_id + " .ism-pause-button").addClass("ism-play");
+      autoplay_run = true;
+    
 
     };
 
@@ -866,31 +863,26 @@
         pause_button = iq("#" + element_id + " .ism-pause-button");
 
         // Listen for click of pause button
-        pause_button.on("click", pause_button_handler);
-        pause_button.on("touchstart", pause_button_handler);
+    //    pause_button.on("click", pause_button_handler);
+     //   pause_button.on("touchstart", pause_button_handler);
       }
 
     };
 
     function unbind_pause_button() {
 
-      iq("#" + element_id + " .ism-pause-button").off("click", pause_button_handler);
-      iq("#" + element_id + " .ism-pause-button").off("touchstart", pause_button_handler);
+    //  iq("#" + element_id + " .ism-pause-button").off("click", pause_button_handler);
+     // iq("#" + element_id + " .ism-pause-button").off("touchstart", pause_button_handler);
 
     };
 
     function pause_button_handler(e) {
-      e.preventDefault();
-      e.stopPropagation();
+     // e.preventDefault();
+    //  e.stopPropagation();
 
-      if(autoplay_run)
-      {
-        pause_autoplay();
-      }
-      else
-      {
+     
         continue_autoplay();
-      }
+      
 
     };
 
@@ -915,14 +907,9 @@
         dragStopCallback: function(x_val, y_val) {
           var real_index = (dragger.getStep()[0] - 1); // -1: convert from 1-based to 0-based index
           new_slide_index = real_index;
-          if(opts.pause_button)
-          {
-            pause_autoplay();
-          }
-          else
-          {
+        
             continue_autoplay();
-          }
+          
           after_swipe(new_slide_index);
         },
         onAfterGlide: function() {
