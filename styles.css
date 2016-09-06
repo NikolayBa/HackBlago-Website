@@ -174,7 +174,7 @@ nav a.router-link-active {
 }
 
 .announce {
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: initial;
     font-style: italic;
 }
