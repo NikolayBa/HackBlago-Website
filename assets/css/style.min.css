@@ -90,7 +90,6 @@ body {
 }
 
 .home-sec {
-    background: url(../img/towel-header.jpg) center center no-repeat fixed;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -164,7 +163,7 @@ h1::after {
     margin-bottom: 50px
 }
 
-h1::after {
+.header-line::after {
     content: " ";
     border: 2px solid yellow;
     width: 200px;
