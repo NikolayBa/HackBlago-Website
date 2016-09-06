@@ -163,6 +163,7 @@ nav a.router-link-active {
 
 .partners_block {
     display: inline-flex;
+    visibility: hidden;
 }
 .first_partner{
     margin-right: 25px;
@@ -170,6 +171,12 @@ nav a.router-link-active {
 
 .second_partner{
     margin-left: 25px;
+}
+
+.announce {
+    font-size: 25px;
+    font-family: initial;
+    font-style: italic;
 }
 
 /* everywhere else */
