@@ -188,3 +188,79 @@ nav a.router-link-active {
 #special_hyperlink a{
     text-decoration: none;
 }
+
+
+
+/*new css*/
+
+.goldPartner {
+    box-shadow: #FFD700 1px 1px 5px 5px;
+    width: 67%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.silverPartner {
+    box-shadow: #C0C0C0 1px 1px 5px 5px;
+    width: 67%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mediaPartner {
+    box-shadow: #800080 1px 1px 5px 5px;
+    width: 67%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .navbar-brand img {
+        width: 100%;
+    
+    }
+
+    .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:hover {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    #menu {
+        background-color: rgba(28,43,75,0.9);
+    }
+    
+    .container.set-pad {
+        margin-top: 0px !important;
+        padding-top: 0px;
+    }
+    
+    .header-line {
+        padding-top: 0px;
+    }
+    
+    .paragraph {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .row.set-row-pad {
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-brand {
+        width: 80%;
+    }
+}
+
+
