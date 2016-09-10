@@ -71,7 +71,7 @@ body {
 }
 
 #menu {
-    background-color: #1c2b4b;
+    background-color: #1b95e0;
     color: #fff;
     font-size: 12px;
     font-weight: 900;
@@ -142,7 +142,7 @@ h1::after {
     font-size: 20px;
     font-weight: 900;
     padding: 5px 10px 10px 5px;
-    color: #1C2B4B 
+    color: #1C2B4B
 }
 
 .tag-line h2>i {
@@ -303,8 +303,29 @@ h1::after {
 
 #footer {
     padding: 5px 20px;
-    background-color: #1C2B4B;
+    background-color: #1b95e0;
     text-align: center;
     color: #fff;
     font-size: 15px
+}
+
+.slider-title {
+    font-family: 'mrrobotregular'!important;
+    font-weight: 100!important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 1;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'mrrobotregular';
+    src: url('../mrrobot-webfont.woff2') format('woff2'), url('../mrrobot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

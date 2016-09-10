@@ -1,232 +1,252 @@
-﻿            <!DOCTYPE html>
-            <html>
-            <head>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="description" content="HackBlagoevgrad is a week-long IT forum which aims at combining the formats of a conference consisting of several presentations and workshops given by professionals in the field, and a hackathon during which the participants work in teams on developing certain technological products.">
-                <title>Hack Blagoevgrad</title>
-                <link href="assets/css/bootstrap.css" rel="stylesheet" />
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                <link href="assets/css/flexslider.min.css" rel="stylesheet" />
-                <link href="assets/css/style.min.css" rel="stylesheet" />
-                <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
-                <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-                <link rel="shortcut icon" type="image/svg" href="assets/img/svg_icons/title_machine.svg" />
-                <link rel="stylesheet" href="styles.css">
-                <!-- 1. Load libraries -->
-                <!-- Polyfill(s) for older browsers -->
-                <script src="node_modules/core-js/client/shim.min.js"></script>
-                <script src="node_modules/zone.js/dist/zone.js"></script>
-                <script src="node_modules/reflect-metadata/Reflect.js"></script>
-                <script src="node_modules/systemjs/dist/system.src.js"></script>
-                <!-- 2. Configure SystemJS -->
-                <script src="systemjs.config.js"></script>
-                <script>
-                    System.import('app').catch(function(err) {
-                        console.error(err);
-                    });
-                </script>
-                <!-- slider assets loading -->
-                <link rel="stylesheet" href="assets/css/my-slider.css"/>
-                <script src="assets/js/ism-2.2.js"></script>
-                <!-- favicon -->
-                <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-            </head>
+﻿<!DOCTYPE html>
+<html>
 
-            <body>
-                <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
-                    <div class="container">
-                        <div class="navbar-header move-me">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HackBlagoevgrad is a week-long IT forum which aims at combining the formats of a conference consisting of several presentations and workshops given by professionals in the field, and a hackathon during which the participants work in teams on developing certain technological products.">
+    <title>Hack Blagoevgrad</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="assets/css/flexslider.min.css" rel="stylesheet" />
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- slider assets loading -->
+    <link rel="stylesheet" href="assets/css/my-slider.css" />
+    <script src="assets/js/ism-2.2.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header move-me">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        	<div>
-                            <a class="navbar-brand" href="#home"><img src='https://s22.postimg.org/6cn80kuxd/hackblago_50_X350.png' border='0' alt='hackblago 50X350' /></a>
-                            </div>
-                        </div>
-                        <div class="navbar-collapse collapse move-me">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#home">HOME</a></li>
-                                <li><a href="#about-sec">ABOUT</a></li>
-                                <li><a href="#schedule-sec">SCHEDULE</a></li>
-                                <li><a href="#organizers-sec">ORGANIZERS</a></li>
-                                <li><a href="#partners-sec">PARTNERS</a></li>
-                                <li><a href="#lecture-sec">LECTURES</a></li>
-                                <li><a href="#location-sec">CONTACTS</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="navbar-brand col-xs-12 hidden-sm hidden-md hidden-lg" style="position: absolute;padding-top: 15px;padding-bottom: 0px;padding-right: 0px;padding-left: 10px;width:210px" href="#home">
+                    <img class="img-responsive" src="https://s22.postimg.org/6cn80kuxd/hackblago_50_X350.png" />
+                    <!--Mobile-->
                 </div>
-
-                
-                <div class="home-sec" id="home">
-                    <div class='slidercontainter'>
-                        <div class="ism-slider" data-play_type="loop" data-radios="false" id="my-slider">
-                            <div class="ism-caption">HACK BLAGOEVGRAD 2016</div>
-                                <ol>
-                                    <li>
-                                        <img src="assets/slides/_u/1473085497016_998504.jpg">     
-                                    </li>
-                                    <li>
-                                        <img src="assets/slides/_u/1473085548012_346994.jpg">
-                                    </li>
-                                    <li>
-                                        <img src="assets/slides/_u/1473085607465_82288.jpg">         
-                                    </li>
-                                </ol>
-                         </div>
-                    </div>
+                <div class="navbar-brand hidden-xs col-sm-12 hidden-md hidden-lg" style="position: absolute;padding-top: 4px;" href="#home">
+                    <img class="img-responsive" src="https://s9.postimg.org/z7n7fimq7/Rocket.png" />
+                    <!--Tab-->
                 </div>
-
-                <div id="about-sec" class="container set-pad">
-                    <div class="row text-center">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                            <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">About HackBlagoevgrad</h1>
-                            <div data-scroll-reveal="enter from the bottom after 0.1s">
-                                <p class="paragraph">HackBlagoevgrad is a week-long IT forum which aims at combining the formats of a conference consisting of several presentations and workshops given by professionals in the field, and a hackathon during which the participants work in teams on developing certain technological products.</p>
-                                <p class="paragraph">The idea behind its organization was born when a group of young people studying and working in the IT field got together. Since we were all related in one way or another to the city of Blagoevgrad, we saw the dire need of bringing such a forum to the local audience. After thorough research and extensive planning, today we present to you the shape of what was once just a whim and will soon enough come to life.</p>
-                                <p class="paragraph"><strong>The first edition of HackBlagoevgrad will take place in the week November 14-20, 2016 on the Campus of the American University in Bulgaria.</strong></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="navbar-brand hidden-xs hidden-sm col-md-12 hidden-lg" style="position: absolute;padding-top: 4px;" href="#home">
+                    <img class="img-responsive" src="https://s9.postimg.org/z7n7fimq7/Rocket.png" />
+                    <!--Desktop-->
                 </div>
-
-                <div id="schedule-sec" class="container set-pad">
-                    <div class="row text-center">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                            <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Schedule</h1>
-                            <div data-scroll-reveal="enter from the bottom after 0.1s">
-                                <p class="paragraph">
-                                As scheduled, the first HackBlagoevgrad event will go in the following way: </br></br>
-                                <strong> Monday through Thursday (November 14-17, 2016): </strong> Starting at 7:30PM companies’ professionals give presentations/workshops in one of the aulas in Balkanski Academic Center, AUBG Campus.
-                                </p>
-                                <p class="paragraph"> <strong> Friday (November 18, 2016): </strong> Around 6PM participants and mentors gather for the kick-off of the hackathon weekend. The participants discuss their ideas and form teams (if they have not done so previously at the time of registration or during the presentations’/workshops’ days). After that, the teams head for their personal workspaces in the Sports Hall of the ABF Student Center, AUBG Campus, and start working.</p>
-                                <p class="paragraph"> <strong> Saturday (November 19, 2016): </strong> The participants continue working on their ideas throughout the whole day/night and the mentors help them.</p>
-                                <p class="paragraph"> <strong> Sunday (November 20, 2016): </strong> The participants finish up their projects. In the evening participants, mentors, and spectators gather in Dr. Carl Djerassi Theater Hall, AUBG Campus. Every team presents what they have done in front of the jury and an open audience. After that comes the voting and the jury announces the winners who receive prizes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="navbar-brand hidden-xs hidden-sm hidden-md col-lg-12" style="position: absolute;padding-top: 8px;" href="#home">
+                    <img class="img-responsive" src="https://s22.postimg.org/6cn80kuxd/hackblago_50_X350.png" />
+                    <!--Large-->
                 </div>
+                <!--<div>
+                    <a class="navbar-brand " href="#home"><img src='https://s22.postimg.org/6cn80kuxd/hackblago_50_X350.png' border='0' alt='hackblago 50X350' /></a>
+                </div>-->
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <li><a href="#home" data-toggle="collapse" data-target=".navbar-collapse">HOME</a></li>
+                    <li><a href="#about-sec" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a></li>
+                    <li><a href="#schedule-sec" data-toggle="collapse" data-target=".navbar-collapse">SCHEDULE</a></li>
+                    <li><a href="#organizers-sec" data-toggle="collapse" data-target=".navbar-collapse">ORGANIZERS</a></li>
+                    <li><a href="#partners-sec" data-toggle="collapse" data-target=".navbar-collapse">PARTNERS</a></li>
+                    <li><a href="#lecture-sec" data-toggle="collapse" data-target=".navbar-collapse">LECTURES</a></li>
+                    <li><a href="#location-sec" data-toggle="collapse" data-target=".navbar-collapse">CONTACTS</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs col-sm-12 col-md-12 col-lg-12" style="width:inherit">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about-sec">ABOUT</a></li>
+                    <li><a href="#schedule-sec">SCHEDULE</a></li>
+                    <li><a href="#organizers-sec">ORGANIZERS</a></li>
+                    <li><a href="#partners-sec">PARTNERS</a></li>
+                    <li><a href="#lecture-sec">LECTURES</a></li>
+                    <li><a href="#location-sec">CONTACTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-                 <div id="organizers-sec" class="container set-pad">
-                    <div class="row text-center">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                            <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Organizers</h1>
-                            <div data-scroll-reveal="enter from the bottom after 0.1s">
-                                    <p class="paragraph">
-                                        We, the people behind the scenes of HackBlagoevgrad, are a group of young enthusiasts who believe in the future of technology and in the abilities of our fellows to take the initiative and make a change.
-                                    </p>
-                                    <p class="paragraph"> Currently, the main responsibility for the organization of the week-long event is shared between the Computer Science Students Union (CSSU) at the American University in Bulgaria, the High School of Mathematics “Acad. Sergey Pavlovich
-                                        Korolyov” in Blagoevgrad, and other devotees to our common mission. Clearly, our dreams would not have become a reality without the special help and support granted by our partners from HackBulgaria.
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
+
+    <div class="home-sec" id="home">
+        <div class='slidercontainter'>
+            <div class="ism-slider" data-play_type="loop" data-radios="false" id="my-slider">
+                <div class="ism-caption slider-title">HACK<span style="color: #17447b;text-shadow: 1.0px 1.0px 1.0px white;font-family: 'mrrobotregular'">BLAGOEVGRAD</span> <span style="color: white;font-family: 'mrrobotregular'">2016</span></div>
+                <ol>
+                    <li>
+                        <img src="assets/slides/_u/1473085497016_998504.jpg">
+                    </li>
+                    <li>
+                        <img src="assets/slides/_u/1473085548012_346994.jpg">
+                    </li>
+                    <li>
+                        <img src="assets/slides/_u/1473085607465_82288.jpg">
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">About HackBlagoevgrad</h1>
+                <div data-scroll-reveal="enter from the bottom after 0.1s">
+                    <p class="paragraph">HackBlagoevgrad is a week-long IT forum which aims at combining the formats of a conference consisting of several presentations and workshops given by professionals in the field, and a hackathon during which the participants work in
+                        teams on developing certain technological products.</p>
+                    <p class="paragraph">The idea behind its organization was born when a group of young people studying and working in the IT field got together. Since we were all related in one way or another to the city of Blagoevgrad, we saw the dire need of bringing
+                        such a forum to the local audience. After thorough research and extensive planning, today we present to you the shape of what was once just a whim and will soon enough come to life.</p>
+                    <p class="paragraph"><strong>The first edition of HackBlagoevgrad will take place in the week November 14-20, 2016 on the Campus of the American University in Bulgaria.</strong></p>
                 </div>
+            </div>
+        </div>
+    </div>
 
-
-
-                <div id="partners-sec">
-                    <div class="container set-pad">
-                        <div class="row text-center">
-                          <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Partners</h1>
-                            <div data-scroll-reveal="enter from the bottom after 0.1s">
-                               
-                                <div>
-                                    <h2>Gold partners<br /></h2>
-                                <p class="announce"><strong>Will be announced soon</strong></p>
-
-                                    
-                                </div>
-                                <div>
-                                    <h2><br />Silver partners<br /></h2>
-                                    <p class="announce"><strong>Will be announced soon</strong></p>
-
-                                </div>
-                                <div>
-                                    <h2><br />Media partners</h2>
-                                    <p class="announce"><strong>Will be announced soon</strong></p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+    <div id="schedule-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Schedule</h1>
+                <div data-scroll-reveal="enter from the bottom after 0.1s">
+                    <p class="paragraph">
+                        As scheduled, the first HackBlagoevgrad event will go in the following way: </br>
+                        </br>
+                        <strong> Monday through Thursday (November 14-17, 2016): </strong> Starting at 7:30PM companies’ professionals give presentations/workshops in one of the aulas in Balkanski Academic Center, AUBG Campus.
+                    </p>
+                    <p class="paragraph"> <strong> Friday (November 18, 2016): </strong> Around 6PM participants and mentors gather for the kick-off of the hackathon weekend. The participants discuss their ideas and form teams (if they have not done so previously at the time
+                        of registration or during the presentations’/workshops’ days). After that, the teams head for their personal workspaces in the Sports Hall of the ABF Student Center, AUBG Campus, and start working.</p>
+                    <p class="paragraph"> <strong> Saturday (November 19, 2016): </strong> The participants continue working on their ideas throughout the whole day/night and the mentors help them.</p>
+                    <p class="paragraph"> <strong> Sunday (November 20, 2016): </strong> The participants finish up their projects. In the evening participants, mentors, and spectators gather in Dr. Carl Djerassi Theater Hall, AUBG Campus. Every team presents what they have
+                        done in front of the jury and an open audience. After that comes the voting and the jury announces the winners who receive prizes.
+                    </p>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div id="lecture-sec">
-                 <div class="container set-pad">
-                        <div class="row text-center">
-                          <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Lectures</h1>
-                            <div data-scroll-reveal="enter from the bottom after 0.1s">
-                                <p class="announce"><strong> Will be announced by the end of September </strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    
+    <div id="organizers-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Organizers</h1>
+                <div data-scroll-reveal="enter from the bottom after 0.1s">
+                    <p class="paragraph">
+                        We, the people behind the scenes of HackBlagoevgrad, are a group of young enthusiasts who believe in the future of technology and in the abilities of our fellows to take the initiative and make a change.
+                    </p>
+                    <p class="paragraph"> Currently, the main responsibility for the organization of the week-long event is shared between the Computer Science Students Union (CSSU) at the American University in Bulgaria, the High School of Mathematics “Acad. Sergey Pavlovich
+                        Korolyov” in Blagoevgrad, and other devotees to our common mission. Clearly, our dreams would not have become a reality without the special help and support granted by our partners from HackBulgaria.
+                    </p>
                 </div>
+            </div>
+        </div>
+    </div>
 
 
-                <div id="location-sec" class="container set-pad">
-                    <div class="row text-center">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                            <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Contacts </h1>
-                        </div>
+
+    <div id="partners-sec">
+        <div class="container set-pad">
+            <div class="row text-center">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Partners</h1>
+                <div data-scroll-reveal="enter from the bottom after 0.1s">
+
+                    <div>
+                        <h2>Gold partners<br /></h2>
+                        <p class="announce"><strong>Will be announced soon</strong></p>
+
+
                     </div>
-                     
-                    <div id="map" class="col-lg-12 col-md-12 col-sm-12">
-               
-                    <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=America%20for%20Bulgaria%20Student%20Center%2C%20ulitsa%20%22Svoboda%20Bachvarova%22%2C%20Blagoevgrad%2C%20Bulgaria&zoom=14&key=AIzaSyAdDyAMvIcTdkS2uWIw9HXnJSQTSkxasjY" allowfullscreen></iframe> 
-                   
+                    <div>
+                        <h2><br />Silver partners<br /></h2>
+                        <p class="announce"><strong>Will be announced soon</strong></p>
+
                     </div>
-                    
+                    <div>
+                        <h2><br />Media partners</h2>
+                        <p class="announce"><strong>Will be announced soon</strong></p>
+
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="container">
-                    <div class="row set-row-pad">
-                        <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.1s">
-                            <h3><strong>Our address </strong></h3>
-                            <div class="move-me">
-                                <h4>Blagoevgrad,</h4>
-                                <h4>Svoboda Bachvarova 12 Str.</h4>
-                                <h4>American University in Bulgaria</h4>
-                                <h4>America for Bulgaria Student Center</h4>
-
-                               
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.1s">
-                            <h3><strong>Social Media</strong></h3>
-                            <div id="special_hyperlink" >
-                                <a href="https://www.facebook.com/hackblagoevgrad/" alt="facebook" target="_blank" > <img src='https://s16.postimg.org/haxkgdvzp/facebook.png' border='0' alt='facebook'/> </a>
-                                <a href="https://plus.google.com/110149139903896844720" alt="google plus" target="_blank"> <img src='https://s12.postimg.org/tmxswrkbx/google_plus.png' border='0' alt='google-plus'/> </a>
-                                <a href="https://twitter.com/HackBlagoevgrad" target="_blank"> <img src='https://s18.postimg.org/s21a1vxbd/twitter.png' border='0' alt="twitter" /> </a>
-                            </div>
-                               <h3><strong> Email </strong></h3>
-                            <h4><strong><i class="fa fa-envelope"></i></strong> <a href="mailto:cssu@hackblagoevgrad.org"> cssu@hackblagoevgrad.org </a></h4>
-                        </div>
-                    </div>
+    <div id="lecture-sec">
+        <div class="container set-pad">
+            <div class="row text-center">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Lectures</h1>
+                <div data-scroll-reveal="enter from the bottom after 0.1s">
+                    <p class="announce"><strong> Will be announced by the end of September </strong></p>
                 </div>
+            </div>
+        </div>
+
+    </div>
 
 
-                <div id="contact-sec">
+    <div id="location-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the top after 0.1s" class="header-line">Contacts </h1>
+            </div>
+        </div>
 
-                    <div id="footer">
-                      HackBlagoevgrad 2016
-                    </div>
+        <div id="map" class="col-lg-12 col-md-12 col-sm-12">
 
-                    <script src="assets/js/jquery-1.10.2.js"></script>
-                    <script src="assets/js/bootstrap.js"></script>
-                    <script src="assets/js/jquery.flexslider.js"></script>
-                    <script src="assets/js/scrollReveal.js"></script>
-                    <script src="assets/js/jquery.easing.min.js"></script>
-                    <script src="assets/js/prane.js"></script>
+            <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=America%20for%20Bulgaria%20Student%20Center%2C%20ulitsa%20%22Svoboda%20Bachvarova%22%2C%20Blagoevgrad%2C%20Bulgaria&zoom=14&key=AIzaSyAdDyAMvIcTdkS2uWIw9HXnJSQTSkxasjY"
+                allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row set-row-pad">
+            <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.1s">
+                <h3><strong>Our address </strong></h3>
+                <div class="move-me">
+                    <h4>Blagoevgrad,</h4>
+                    <h4>Svoboda Bachvarova 12 Str.</h4>
+                    <h4>American University in Bulgaria</h4>
+                    <h4>America for Bulgaria Student Center</h4>
+
+
                 </div>
-           
-            </body>
+            </div>
 
-            </html>
+            <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.1s">
+                <h3><strong>Social Media</strong></h3>
+                <div id="special_hyperlink">
+                    <a href="https://www.facebook.com/hackblagoevgrad/" alt="facebook" target="_blank"> <img src='https://s16.postimg.org/haxkgdvzp/facebook.png' border='0' alt='facebook' /> </a>
+                    <a href="https://plus.google.com/110149139903896844720" alt="google plus" target="_blank"> <img src='https://s12.postimg.org/tmxswrkbx/google_plus.png' border='0' alt='google-plus' /> </a>
+                    <a href="https://twitter.com/HackBlagoevgrad" target="_blank"> <img src='https://s18.postimg.org/s21a1vxbd/twitter.png' border='0' alt="twitter" /> </a>
+                </div>
+                <h3><strong> Email </strong></h3>
+                <h4><strong><i class="fa fa-envelope"></i></strong> <a href="mailto:cssu@hackblagoevgrad.org"> cssu@hackblagoevgrad.org </a></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact-sec">
+
+        <div id="footer">
+            HackBlagoevgrad 2016
+        </div>
+
+        <script src="assets/js/jquery-1.10.2.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/jquery.flexslider.js"></script>
+        <script src="assets/js/scrollReveal.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/prane.js"></script>
+    </div>
+
+</body>
+
+</html>
