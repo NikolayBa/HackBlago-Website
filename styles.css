@@ -7,7 +7,8 @@ h1 {
 }
 
 h2,
-h3, h4 {
+h3,
+h4 {
     color: #1C2B4B;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -165,11 +166,12 @@ nav a.router-link-active {
     display: inline-flex;
     visibility: hidden;
 }
-.first_partner{
+
+.first_partner {
     margin-right: 25px;
 }
 
-.second_partner{
+.second_partner {
     margin-left: 25px;
 }
 
@@ -179,16 +181,16 @@ nav a.router-link-active {
     font-style: italic;
 }
 
+
 /* everywhere else */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#special_hyperlink a{
+#special_hyperlink a {
     text-decoration: none;
 }
-
 
 
 /*new css*/
@@ -222,36 +224,29 @@ nav a.router-link-active {
         display: inline-block;
         width: 50%;
     }
-    
     .navbar-brand img {
         width: 100%;
-    
     }
-
-    .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:hover {
+    .navbar-inverse .navbar-nav>li>a,
+    .navbar-inverse .navbar-nav>li>a:hover {
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center;
     }
-    
     #menu {
-        background-color: rgba(28,43,75,0.9);
+        background-color: rgba(27, 149, 224, 0.9);
     }
-    
     .container.set-pad {
         margin-top: 0px !important;
         padding-top: 0px;
     }
-    
     .header-line {
         padding-top: 0px;
     }
-    
     .paragraph {
         text-align: center;
         font-size: 18px;
     }
-    
     .row.set-row-pad {
         text-align: center;
     }
@@ -262,5 +257,3 @@ nav a.router-link-active {
         width: 80%;
     }
 }
-
-
