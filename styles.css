@@ -164,7 +164,7 @@ nav a.router-link-active {
 
 .partners_block {
     display: inline-flex;
-    visibility: hidden;
+    padding-top: 15px;
 }
 
 .first_partner {
@@ -173,6 +173,7 @@ nav a.router-link-active {
 
 .second_partner {
     margin-left: 25px;
+    visibility: hidden;
 }
 
 .announce {
@@ -261,4 +262,17 @@ nav a.router-link-active {
     .navbar-brand {
         width: 80%;
     }
+	
+	.first_partner_img {
+		width: 65%;
+	}
+
+	.second_partner_img {
+		width: 65%;
+	}
+	
+	.partners_block {
+		display: block;
+		padding-top: 15px;
+	}
 }
