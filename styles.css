@@ -224,17 +224,22 @@ nav a.router-link-active {
         display: inline-block;
         width: 50%;
     }
-    .navbar-brand img {
-        width: 100%;
-    }
     .navbar-inverse .navbar-nav>li>a,
     .navbar-inverse .navbar-nav>li>a:hover {
-        padding-top: 10px;
-        padding-bottom: 10px;
         text-align: center;
     }
     #menu {
         background-color: rgba(27, 149, 224, 0.9);
+    }
+
+    #partners-sec,
+    #organizers-sec,
+    #location-sec,
+    #about-sec,
+    #lecture-sec,
+    #schedule-sec,
+    #contact-sec {
+        padding-top: 50px;
     }
     .container.set-pad {
         margin-top: 0px !important;
