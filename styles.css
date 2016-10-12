@@ -239,15 +239,18 @@ nav a.router-link-active {
 	width: 49%;
 	padding: 20px;
 }
-#programista{
-	width: 70%;
-}
 .goldPartnerImg {
 	width: 100%;
 }
+.tightLogo{
+	width: 70%;
+}
 
-
-
+.map{
+    pointer-events: none;
+    width: 100%;
+    cursor: url("https://www.google.com/maps/embed/v1/place?q=America%20for%20Bulgaria%20Student%20Center%2C%20ulitsa%20%22Svoboda%20Bachvarova%22%2C%20Blagoevgrad%2C%20Bulgaria&zoom=14&key=AIzaSyAdDyAMvIcTdkS2uWIw9HXnJSQTSkxasjY") 8 8, default
+}	
 @media (max-width: 768px) {
     .navbar-brand {
         display: inline-block;
@@ -299,7 +302,8 @@ nav a.router-link-active {
     .navbar-brand {
         width: 80%;
     }
-	
+
+
 /* 	.first_partner_img {
 		width: 65%;
 	}
@@ -315,3 +319,4 @@ nav a.router-link-active {
 
 
 }
+
