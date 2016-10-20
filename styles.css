@@ -194,6 +194,23 @@ nav a.router-link-active {
 }
 
 
+#register {
+    background-color: rgb(27, 149, 224);
+    border-bottom-color: rgb(197, 83, 101);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    width: 55%;
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 /*new css*/
 
 .contentWrapper {
