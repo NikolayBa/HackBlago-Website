@@ -193,6 +193,14 @@ nav a.router-link-active {
     text-decoration: none;
 }
 
+#sign_up{
+    color: #e1df0f;
+    background-color: rgb(22, 45, 111);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
 
 #register {
     background-color: rgb(27, 149, 224);
