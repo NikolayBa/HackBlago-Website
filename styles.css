@@ -196,19 +196,20 @@ nav a.router-link-active {
 #sign_up{
     color: #e1df0f;
     background-color: rgb(22, 45, 111);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    font-weight: 700;
 }
 
 #register {
     background-color: rgb(27, 149, 224);
     border-bottom-color: rgb(197, 83, 101);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
     border-bottom-width: 3px;
     border-right-width: 3px;
     border-left-width: 3px;
@@ -217,7 +218,7 @@ nav a.router-link-active {
     font-weight: bold;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-
+    margin-top: 35%;
 }
 /*new css*/
 
