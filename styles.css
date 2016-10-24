@@ -1,5 +1,9 @@
 /* Master Styles */
 
+.red-placeholder::-webkit-input-placeholder {
+    color: red;
+}
+
 h1 {
     color: #1C2B4B;
     font-family: Arial, Helvetica, sans-serif;
@@ -182,6 +186,22 @@ nav a.router-link-active {
     font-style: italic;
 }
 
+.awards{
+    position:absolute;
+    width:25%;
+}
+
+.gold_award{
+    margin-left:-18.5%
+}
+
+.silver_award{
+    margin-left:13.5%
+}
+
+.bronze_award{
+    margin-left:45.5%
+}
 
 /* everywhere else */
 
@@ -193,7 +213,33 @@ nav a.router-link-active {
     text-decoration: none;
 }
 
+#sign_up{
+    color: #e1df0f;
+    background-color: rgb(22, 45, 111);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    font-weight: 700;
+}
 
+#register {
+    background-color: rgb(27, 149, 224);
+    border-bottom-color: rgb(197, 83, 101);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    width: 55%;
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35%;
+}
 /*new css*/
 
 .contentWrapper {
@@ -250,7 +296,38 @@ nav a.router-link-active {
     pointer-events: none;
     width: 100%;
     cursor: url("https://www.google.com/maps/embed/v1/place?q=America%20for%20Bulgaria%20Student%20Center%2C%20ulitsa%20%22Svoboda%20Bachvarova%22%2C%20Blagoevgrad%2C%20Bulgaria&zoom=14&key=AIzaSyAdDyAMvIcTdkS2uWIw9HXnJSQTSkxasjY") 8 8, default
-}	
+}
+/* IE Fix */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .gold_award{
+        margin-left:2.5%
+    }
+
+    .silver_award{
+        margin-left:34.5%
+    }
+
+    .bronze_award{
+        margin-left:66.5%
+    }
+}
+
+/* Safari fix*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+{ @media {
+    .gold_award{
+        margin-left:-45%
+    }
+
+    .silver_award{
+        margin-left:-13%
+    }
+
+    .bronze_award{
+        margin-left:19%
+    }
+}}
+
 @media (max-width: 768px) {
     .navbar-brand {
         display: inline-block;

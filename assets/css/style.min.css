@@ -325,7 +325,7 @@ h1::after {
 
 @font-face {
     font-family: 'mrrobotregular';
-    src: url('../mrrobot-webfont.woff2') format('woff2'), url('../mrrobot-webfont.woff') format('woff');
+    src: url('../fonts/mrrobot-webfont.woff2') format('woff2'), url('../fonts/mrrobot-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
