@@ -97,22 +97,22 @@
             </div>
             <div class="navbar-collapse collapse move-me">
                 <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-                    <li><a id="sign_up" href="https://goo.gl/forms/HZxx4P2qT8mmmaUt2" data-toggle="collapse" data-target=".navbar-collapse" target="_blank">REGISTER</a></li>
                     <li><a href="#about-sec" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a></li>
                     <li><a href="#schedule-sec" data-toggle="collapse" data-target=".navbar-collapse">SCHEDULE</a></li>
                     <li><a href="#organizers-sec" data-toggle="collapse" data-target=".navbar-collapse">ORGANIZERS</a></li>
                     <li><a href="#partners-sec" data-toggle="collapse" data-target=".navbar-collapse">PARTNERS</a></li>
                     <li><a href="#lecture-sec" data-toggle="collapse" data-target=".navbar-collapse">LECTURES</a></li>
                     <li><a href="#location-sec" data-toggle="collapse" data-target=".navbar-collapse">CONTACTS</a></li>
+                    <li><a href="#register-sec" data-toggle="collapse" data-target=".navbar-collapse">REGISTER</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs col-sm-12 col-md-12 col-lg-12" style="width:inherit">
-                    <li><a id="sign_up" href="https://goo.gl/forms/HZxx4P2qT8mmmaUt2" target="_blank">REGISTER</a></li>
                     <li><a href="#about-sec">ABOUT</a></li>
                     <li><a href="#schedule-sec">SCHEDULE</a></li>
                     <li><a href="#organizers-sec">ORGANIZERS</a></li>
                     <li><a href="#partners-sec">PARTNERS</a></li>
                     <li><a href="#lecture-sec">LECTURES</a></li>
                     <li><a href="#location-sec">CONTACTS</a></li>
+                    <li><a href="#register-sec">REGISTER</a></li>
                 </ul>
             </div>
         </div>
@@ -403,21 +403,43 @@
         </div>
     </div>
 
-
-    <div id="contact-sec">
-
-        <div id="footer">
-            HackBlagoevgrad 2016
+    <div id="footer" style="padding:30px;">
+        <div id="register-sec" class="container" style="margin-bottom:30px;">
+            <div class="row text-center">
+                <h1 data-scroll-reveal="enter from the top after 0.1s">Register</h1>
+            </div>
         </div>
 
-        <script src="assets/js/jquery-1.10.2.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/jquery.flexslider.js"></script>
-        <script src="assets/js/scrollReveal.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
-        <script src="assets/js/prane.js"></script>
+            <div class="container">
+                <div class="text-center">
+                    <form name="registerform">
+                        <div class="form-group">
+                            <input name="person-name" type="text" maxlength="80" class="form-control" required="required" placeholder="Name*">
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="text" maxlength="50" class="form-control " required="required" placeholder="Email*">
+                        </div>
+                        <div class="form-group">
+                            <input name="github" maxlength="100" type="url" class="form-control " placeholder="Github (optional)">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info btn-block btn-lg">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div style="text-align:right;">
+            HackBlagoevgrad 2016
+        </div>
     </div>
 
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/prane.js"></script>
 </body>
 
 </html>
