@@ -380,7 +380,7 @@
       // Merge given config with default config
       init_config(options_arg);
 
-      // Create references to slide elements and count slides
+      // Create references to slide elements and count imgs
       // Modify markup - add classes, container divs, ...
       analyze_and_modify_markup();
 
@@ -544,7 +544,7 @@
       iq("#" + element_id + " .ism-tmp-clone").remove();
       while(iq("#" + element_id + " .ism-frame").length > 0)
       {
-        iq("#" + element_id + " .ism-slides").unwrap();
+        iq("#" + element_id + " .ism-imgs").unwrap();
       }
       if(iq("#" + element_id + " .ism-img-frame").length > 0)
       {
@@ -554,11 +554,11 @@
       //iq("#" + element_id + " .ism-caption").removeAttr("style");
       iq("#" + element_id + " .ism-slide").show();
       iq("#" + element_id + " .ism-slide").removeAttr("style");
-      iq("#" + element_id + " .ism-slides").removeAttr("style");
+      iq("#" + element_id + " .ism-imgs").removeAttr("style");
       iq("#" + element_id + " .ism-img").removeClass("ism-img");
 
       iq("#" + element_id + " .ism-slide").removeClass("ism-slide ism-slide-0 ism-slide-1 ism-slide-2 ism-slide-3 ism-slide-4 ism-slide-5 ism-slide-6 ism-slide-7 ism-slide-8 ism-slide-9");
-      iq("#" + element_id + " .ism-slides").removeClass("ism-slides");
+      iq("#" + element_id + " .ism-imgs").removeClass("ism-imgs");
       iq("#" + element_id).removeClass("active");
 
     };
@@ -574,9 +574,9 @@
       slide_width_pc = 100.0 / (slide_count);
       slide_index = 0;
 
-      ol.addClass("ism-slides");
-      iq("#" + element_id + " .ism-slides > li").addClass("ism-slide");
-      iq("#" + element_id + " .ism-slides > .ism-slide > img, #" + element_id + " .ism-slides > .ism-slide > a > img").addClass("ism-img");
+      ol.addClass("ism-imgs");
+      iq("#" + element_id + " .ism-imgs > li").addClass("ism-slide");
+      iq("#" + element_id + " .ism-imgs > .ism-slide > img, #" + element_id + " .ism-imgs > .ism-slide > a > img").addClass("ism-img");
 
       ol.find("li").each(function(indx) {
         this.addClass("ism-slide-" + indx);
@@ -584,7 +584,7 @@
 
       var slider_frame_html = "<div class='ism-frame'></div>";
       iq("#" + element_id).wrapInner(slider_frame_html);
-      ol = iq("#" + element_id + " ol.ism-slides"); // wrapInner method replaces ol node with copy
+      ol = iq("#" + element_id + " ol.ism-imgs"); // wrapInner method replaces ol node with copy
 
       var img_frame_html = "<div class='ism-img-frame'></div>";
       iq("#" + element_id + " .ism-img").wrap(img_frame_html);
@@ -1068,7 +1068,7 @@
 
       // Clone 'next' slide
       var ol_clone = ol.clone();
-      ol_clone.addClass("ism-slides-clone");
+      ol_clone.addClass("ism-imgs-clone");
       var pos_ratio = (new_slide_index) / (get_slide_count() - 1);
       var offset = dragger.getOffsetsByRatios([pos_ratio, 0]);
       ol_clone.css("transform", "translateX(" + offset[0] + "px)");
@@ -1083,9 +1083,9 @@
 
       ol.fadeInto(el_to_fade_in, opts.transition_duration * 2, function() {
         dragger.setStep(new_slide_index + 1, 1, true);
-        iq("#" + element_id + " .ism-slides-clone").remove();
-        iq("#" + element_id + " .ism-slides").show();
-        iq("#" + element_id + " .ism-slides").css("opacity", null);
+        iq("#" + element_id + " .ism-imgs-clone").remove();
+        iq("#" + element_id + " .ism-imgs").show();
+        iq("#" + element_id + " .ism-imgs").css("opacity", null);
         after_transition(current_slide_index, new_slide_index, true, callback);
       });
 
@@ -1107,8 +1107,8 @@
 
       new_slide_index = parseInt(new_slide_index);
 
-      iq("#" + element_id + " .ism-slides-clone").remove();
-      iq("#" + element_id + " .ism-slides").show();
+      iq("#" + element_id + " .ism-imgs-clone").remove();
+      iq("#" + element_id + " .ism-imgs").show();
       iq("#" + element_id + " li.ism-slide").removeClass("ism-zoom-in");
 
       if(do_reflow)
