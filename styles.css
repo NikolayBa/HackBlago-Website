@@ -273,6 +273,14 @@ nav a.router-link-active {
     padding: 5px;
 }
 
+.industryPartnerHeader {
+    box-shadow: #98fb98 1px 1px 5px 5px;
+    width: 67%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .goldPartnerWrapper {
 	display: inline-block;
 	box-sizing: border-box;
@@ -290,6 +298,14 @@ nav a.router-link-active {
 }
 .tightLogo{
 	width: 70%;
+}
+
+.faqEntry{
+    display:inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+    vertical-align: top;
 }
 
 .map{
