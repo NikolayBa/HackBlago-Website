@@ -13,6 +13,8 @@ jQuery(function() {
     }
 
     $("#reg-form").submit(function(event) {
+        event.preventDefault();
+
         var values = {};
         $('#reg-form :input').each(function() {
             values[this.name] = $(this).val();
@@ -36,6 +38,7 @@ jQuery(function() {
 
         if (!hasValidationErrors) {
             $.post("https://hooks.slack.com/services/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", JSON.stringify({text: values.name + " - " + values.email + " - " + values.github}));
+            $("#reg-form button").attr('disabled', true).text("REGISTERED");
         }
     });
 });
