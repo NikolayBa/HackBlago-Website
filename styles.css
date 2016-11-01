@@ -248,6 +248,66 @@ nav a.router-link-active {
    box-shadow:         inset 0 0 10px #000000;
    padding: 20px;
 }
+/*YouTube*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.leftColumn {
+	display: inline-block;
+	width: 30%;
+    vertical-align: top;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.middleColumn {
+	display: inline-block;
+	width: 30%;
+    vertical-align: top;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.rightColumn {
+	display: inline-block;
+	width: 30%;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.schedule-head {
+    width: 80%;
+    background: #FFE600;
+    color: #002B36;
+    word-wrap: break-word;
+    padding: .5em 1em;
+    border-radius: 1em;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+.schedule-item{
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.schedule-text{
+    /*text-align: left;*/
+}
 
 .goldPartnerHeader {
     box-shadow: #FFD700 1px 1px 5px 5px;
@@ -285,7 +345,6 @@ nav a.router-link-active {
 	display: inline-block;
 	box-sizing: border-box;
 	width: 67%;
-
 }
 
 .goldPartner {
@@ -381,6 +440,27 @@ nav a.router-link-active {
     }
     .row.set-row-pad {
         text-align: center;
+    }
+
+    .leftColumn {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .middleColumn {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .rightColumn {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    .schedule-item{
+        margin-left: 0%;
     }
 
     .goldPartnerWrapper {
