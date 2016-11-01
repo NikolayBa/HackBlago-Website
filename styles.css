@@ -352,6 +352,11 @@ nav a.router-link-active {
 	width: 49%;
 	padding: 20px;
 }
+.vmWare {
+	display: inline-block;
+	width: 70%;
+	padding: 20px;
+}
 .goldPartnerImg {
 	width: 100%;
 }
