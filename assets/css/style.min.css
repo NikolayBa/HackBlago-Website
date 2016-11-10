@@ -1,8 +1,4 @@
-﻿#about-sec {
-    margin-top: 70px;
-}
-
-.features-div h3,
+﻿.features-div h3,
 .home-sec h1,
 .home-sec h3,
 .prices-div h3 {
@@ -236,9 +232,6 @@ h1::after {
     padding-top: 10px
 }
 
-#schedule-sec {
-    margin-top: 60px
-}
 
 .btn-set {
     border-radius: 0;

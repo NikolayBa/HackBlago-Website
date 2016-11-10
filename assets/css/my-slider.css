@@ -24,8 +24,14 @@
   50% { left: 120px; }
 }
 
-.slidercontainter { width: 95%; margin: auto; padding-top: 5em; }
-.slidercontainter .ism-slider { margin-left: auto; margin-right: auto; }
+.slidercontainter {
+    margin-top:65px;
+}
+
+.slidercontainter .ism-slider {
+    margin: auto;
+}
+
 .ism-slider .ism-slides {
   list-style: none;
   position: absolute;
@@ -100,20 +106,17 @@
 
 .ism-caption {
   -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-  padding: 0 1em;
   font-family: Arial,Helvetica,sans-serif;
-  text-shadow: none;
-  font-size: 4em;
+  font-size: 3em;
   color: yellow;
   text-shadow: 1.5px 1.5px 1.5px midnightblue;
-  padding: 0.25em 0.5em; 
   height: 100%;
   text-align: center;
   visibility: visible;
   z-index: 6;
-  position: absolute; 
-   top: 250px; 
-   width: 100%; 
+  position: relative;
+   top: 2em;
+   width: 100%;
    font-weight: 900;
     letter-spacing: 1px;
 }
@@ -279,7 +282,6 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider {
     width: 100%;
-    -webkit-border-radius: 5px; border-radius: 5px; 
 }
 
 #my-slider-ism-badge {
@@ -287,7 +289,7 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-slider:before {
-    content: ''; display: block; padding-top: 34%;
+    content: ''; display: block; padding-top: 49%;
 }
 
 #my-slider .ism-frame {
