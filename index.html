@@ -109,13 +109,13 @@
             </div>
             <div class="navbar-collapse collapse move-me">
                 <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-                    <li><a href="#register-sec" data-toggle="collapse" data-target=".navbar-collapse" style="color: #e1df0f">REGISTER</a></li>
-                    <li><a href="#about-sec" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a></li>
+                    li><a href="#register-sec" data-toggle="collapse" data-target=".navbar-collapse" style="color: #e1df0f">REGISTER</a></li>
                     <li><a href="#schedule-sec" data-toggle="collapse" data-target=".navbar-collapse">SCHEDULE</a></li>
+                    <li><a href="#about-sec" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a></li>
                     <li><a href="#organizers-sec" data-toggle="collapse" data-target=".navbar-collapse">ORGANIZERS</a></li>
                     <li><a href="#partners-sec" data-toggle="collapse" data-target=".navbar-collapse">PARTNERS</a></li>
-                    <li><a href="#faq-sec" data-toggle="collapse" data-target=".navbar-collapse">FAQ</a></li>
                     <li><a href="#lecture-sec" data-toggle="collapse" data-target=".navbar-collapse">LECTURES</a></li>
+                    <li><a href="#faq-sec" data-toggle="collapse" data-target=".navbar-collapse">FAQ</a></li>
                     <li><a href="#location-sec" data-toggle="collapse" data-target=".navbar-collapse">CONTACTS</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs col-sm-12 col-md-12 col-lg-12" style="width:inherit">
@@ -123,8 +123,8 @@
                     <li><a href="#schedule-sec">SCHEDULE</a></li>
                     <li><a href="#organizers-sec">ORGANIZERS</a></li>
                     <li><a href="#partners-sec">PARTNERS</a></li>
-                    <li><a href="#faq-sec">FAQ</a></li>
                     <li><a href="#lecture-sec">LECTURES</a></li>
+                    <li><a href="#faq-sec">FAQ</a></li>
                     <li><a href="#location-sec">CONTACTS</a></li>
                 </ul>
             </div>
@@ -157,24 +157,26 @@
                 <h1 data-scroll-reveal="enter from the top after 0s" class="header-line">About HackBlagoevgrad</h1>
                 <div class="" style="position:relative"data-scroll-reveal="enter from the bottom after 0s">
                     <p class="paragraph"><strong>HackBlagoevgrad </strong>is a week-long IT forum which will be held for the first time in Blagoevgrad. It combines the formats of an IT conference and a hackathon.</p>
-                    <p class="paragraph">The conference will take part between the<strong> 14th and the 18th of November </strong>and will consist of several presentations and workshops given by professionals in the field. Everybody is welcome to drop by, no registration required.</p>
-                    <p class="paragraph">The competitive part – the hackathon will be a three day event between <strong>the 18th and the 20th of November </strong>during which participants will work in previously formed teams. The topic for the hackathon is <strong>Hack to the Next Level</strong>. This means that the participants will be encouraged to create innovative products that can solve problems on a local and national scale. Registration on this page <strong>is required<strong> in order to take part in the hackathon.</p>
+                    <p class="paragraph">The conference will take part between the<strong> 14th and the 18th of November </strong>and will consist of several presentations and workshops given by professionals in the field.</p>
+                    <p class="paragraph">The competitive part – the hackathon will be a three day event between <strong>the 18th and the 20th of November </strong>during which participants will work in previously formed teams. The topic for the hackathon is <strong>Hack to the Next Level</strong>. This means that the participants will be encouraged to create innovative products that can solve problems on a local and national scale.</p>
                     <p class="text-center">The Prizes for the hackathon are as follows:</p>
                     <img src="http://i.imgur.com/UrSQyqr.png" style="width: 33%;">
                     <img src="http://i.imgur.com/dj9HlSk.png" style="width: 33%;">
                     <img src="http://i.imgur.com/fBUFQ3k.png" style="width: 33%;">
-                    <br/>
-                    <button type="button" id="register" style="position: relative;" onclick="location='http://hackblagoevgrad.org/#register-sec'">Register</button>
-                    <br/>
-                    <p class="text-center">Registration is necessary only for the hackathon!</p>
+                    <button class="btn btn-info btn-lg" style="width:50%; margin:10px;" onclick="$('html, body').animate({
+   scrollTop: $(document).height()-$(window).height()},
+   4000,
+   'easeOutQuint'
+                    );">Register</button>
+                    <p class="text-center"><strong>Registration is necessary only for the hackathon!</strong></p>
                 </div>
             </div>
         </div>
     </div>
 
-        
 
-    <div id="schedule-sec" class="container">
+
+    <div id="schedule-sec" class="container set-pad">
         <div class="container text-center">
             <div class="row">
                 <h1 data-scroll-reveal="enter from the top after 0s" class="header-line">Schedule</h1>
@@ -204,13 +206,19 @@
                         <div class="schedule-item">
                             <h4 class="schedule-text">Opening</h4>
                             <p class="schedule-text">
-                                8:30pm – Short Speech
+                                8:20pm – Short Speech
+                            </p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="schedule-text">Opening</h4>
+                            <p class="schedule-text">
+                                8:30pm – Idea Pitches
                             </p>
                         </div>
                         <div class="schedule-item">
                             <h4 class="schedule-text">Teams</h4>
                             <p class="schedule-text">
-                                9:30pm – Teams are formed
+                                10:00pm – Teams are formed
                             </p>
                         </div>
                     </div>
@@ -231,19 +239,19 @@
                         <div class="schedule-item">
                             <h4 class="schedule-text">Lunch</h4>
                             <p class="schedule-text">
-                                1:00pm – Food and drinks
+                                12:00 Noon – Food and drinks
                             </p>
                         </div>
                         <div class="schedule-item">
                             <h4 class="schedule-text">Mentorship</h4>
                             <p class="schedule-text">
-                                1:30pm – Mentors consult the teams
+                                1:00pm – Mentors consult the teams
                             </p>
                         </div>
                         <div class="schedule-item">
                             <h4 class="schedule-text">Code</h4>
                             <p class="schedule-text">
-                                6:00pm – Progress meetings
+                                6:00pm – Hack & Code
                             </p>
                         </div>
                         <div class="schedule-item">
@@ -276,13 +284,13 @@
                         <div class="schedule-item">
                             <h4 class="schedule-text">Lunch</h4>
                             <p class="schedule-text">
-                                1:00pm – Food and drinks
+                                12:00 Noon – Food and drinks
                             </p>
                         </div>
                         <div class="schedule-item">
                             <h4 class="schedule-text">Code</h4>
                             <p class="schedule-text">
-                                1:30pm – Hack & Code
+                                1:00pm – Hack & Code
                             </p>
                         </div>
                         <div class="schedule-item">
@@ -293,15 +301,15 @@
                             </p>
                         </div>
                         <div class="schedule-item">
-                            <h4 class="schedule-text">Presentations</h4>
+                            <h4 class="schedule-text">Presentation</h4>
                             <p class="schedule-text">
-                                3:30pm – Teams present
+                                5:00pm – Teams present
                             </p>
                         </div>
                         <div class="schedule-item">
                             <h4 class="schedule-text">Awards</h4>
                             <p class="schedule-text">
-                                6:00pm – Winners get announced
+                                7:30pm – Winners get announced
                             </p>
                         </div>
                     </div>
@@ -310,7 +318,7 @@
         </div>
     </div>
     
-    <div id="organizers-sec" class="container">
+    <div id="organizers-sec" class="container set-pad">
         <div class="container text-center">
             <div class="row">
                 <h1 class="header-line" data-scroll-reveal="enter from the top after 0s">Organizers</h1>
@@ -518,18 +526,70 @@
     </div>
 
     <div id="lecture-sec">
-        <div class="container">
-            <div class="row text-center">
+        <div class="container set-pad">
+            <div class="container text-center">
                 <h1 data-scroll-reveal="enter from the top after 0s" class="header-line">Lectures</h1>
-                <div data-scroll-reveal="enter from the bottom after 0s">
-                    <!--<p class="announce"><strong> Will be announced very soon. </strong></p>-->
-                    <img style="tightLogo" src='http://i.imgur.com/peKnOQT.png' border='0' alt='schedule' />
-                </div>
+            </div>
+            <div class="container">
+                <table data-scroll-reveal="enter from the top after 0s">
+                    <thead>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th>16:00<br />-<br />17:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Are you a conscious master?</td>
+                        </tr>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th>17:00<br />-<br />18:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>SaaS Integration platform eHub - Your Omni-Commerce shortcut<br /><span>IoT - control and monitor everything in your home</span></td>
+                        </tr>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th>18:00<br />-<br />19:00</th>
+                            <td>Warehouse application 0-100 with Angular and Ignite UI JS Blocks</td>
+                            <td>Academical vs. Practical (or a reality check on the IT market)</td>
+                            <td>developer-* communication.</td>
+                            <td>Rewriting History… with Git</td>
+                            <td><span>Developer's Guide to Azure IoT</span></td>
+                        </tr>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th>19:00<br />-<br />20:00</th>
+                            <td><span>Intro to Angular 2 Redux Аrchitecture</span></td>
+                            <td>IoT - electronics essentials</td>
+                            <td><span>Hands on Session - Integrate your Java web application with Paypal</span><br />Test driven development with javascript on Rhino</td>
+                            <td>Intro to Project Management</td>
+                            <td></td>
+                        </tr>
+                        <tr data-scroll-reveal="enter from the top after 0s">
+                            <th>20:00<br />-<br />21:00</th>
+                            <td>Using Azure for a network of charging stations for electric cars<br /><span>The new era of the business applications development – "For The Cloud In The Cloud"</span></td>
+                            <td>Breaking code: Creating a software professional culture for managers and engineers</td>
+                            <td>Catching Fire: Doing things fast with Android and Firebase</td>
+                            <td>An Overview of Backend Architecture</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 
-    <div id="faq-sec" class="container">
+    <div id="faq-sec" class="container set-pad">
         <div class="row text-center">
             <div>
                 <h1 data-scroll-reveal="enter from the top after 0s" class="header-line">FAQ</h1>
@@ -571,7 +631,7 @@
         </div>
     </div>
 
-    <div id="location-sec" class="container">
+    <div id="location-sec" class="container set-pad">
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                 <h1 data-scroll-reveal="enter from the top after 0s" class="header-line">Contacts </h1>

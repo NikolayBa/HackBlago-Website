@@ -225,11 +225,20 @@ nav a.router-link-active {
 
 #register {
     background-color: rgb(27, 149, 224);
+    border-bottom-color: rgb(197, 83, 101);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 3px;
     width: 55%;
     color: #333;
     font-weight: bold;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35%;
 }
 /*new css*/
 
@@ -296,6 +305,9 @@ nav a.router-link-active {
     margin-left: 10%;
 }
 
+.schedule-text{
+    /*text-align: left;*/
+}
 
 .generalPartnerHeader {
     box-shadow: #00a1f1 1px 1px 5px 5px;
@@ -348,12 +360,12 @@ nav a.router-link-active {
 	width: 49%;
 	padding: 20px;
 }
+
 .msPartner {
 	display: inline-block;
 	width: 100%;
 	padding: 20px;
 }
-
 .microsoft {
 	width: 100%;
     display: block;
@@ -511,3 +523,34 @@ nav a.router-link-active {
 
 }
 
+tr {
+    border-top: 1px solid #c5c5c5;
+}
+
+thead tr {
+    border-top: 0;
+}
+
+td, th {
+    border-left: 1px solid #c5c5c5;
+    text-align: center;
+}
+
+td:first-child, th:first-child {
+    border-left: 0;
+}
+
+
+td {
+    width: 19%;
+    padding: 5px;
+    height: 100px;
+}
+
+tbody th {
+    width: 5%;
+}
+
+table span {
+    color: #167093;
+}
