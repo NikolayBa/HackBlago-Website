@@ -360,6 +360,12 @@ nav a.router-link-active {
 	width: 49%;
 	padding: 20px;
 }
+.goldPartnerImg {
+	width: 100%;
+}
+.tightLogo{
+	width: 70%;
+}
 
 .msPartner {
 	display: inline-block;
@@ -380,11 +386,14 @@ nav a.router-link-active {
 	width: 70%;
 	padding: 20px;
 }
-.goldPartnerImg {
-	width: 100%;
+.redbull{
+    width: 27%
 }
-.tightLogo{
-	width: 70%;
+.easy3d{
+    width: 48%;
+}
+.rilana{
+    width: 50%;
 }
 
 .faqEntry{
