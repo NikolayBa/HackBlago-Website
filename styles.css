@@ -563,3 +563,28 @@ tbody th {
 table span {
     color: #167093;
 }
+
+svg{
+    width:100%;
+    margin:0 auto;
+}
+
+#hex{
+    stroke-width:2;
+    stroke: #1b95e0;
+    fill-opacity:0.6;
+    transition:fill-opacity .8s;
+}
+svg:hover #hex{
+    fill-opacity:1;
+}
+#text{
+    stroke-width:0.5;
+    stroke:#FFE600;
+    fill-opacity:0.4;
+    fill:#FFE600;
+    transition:fill-opacity .8s;
+}
+#hex:hover + #text{
+    fill-opacity:1;
+}
