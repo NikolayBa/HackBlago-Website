@@ -592,7 +592,6 @@
     };
 
     function get_slide_count() {
-
       return iq("#" + element_id + " .ism-slide").length;
 
     };
